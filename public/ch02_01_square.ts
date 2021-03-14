@@ -107,12 +107,14 @@ const main = async () => {
         -0.5, -0.5, 0.0, // 1 bot left
          0.5, -0.5, 0.0, // 2 bot right 
          0.5,  0.5, 0.0, // 3 top right
+        //  0.0,  1.0, 0.0, // 4 top middle - pentagon
     ]);
 
     // prettier-ignore
     const indices = new Uint16Array([
         0, 1, 2, // 1
-        0, 2, 3  // 2
+        0, 2, 3, // 2
+        // 0, 3, 4, // 3 - pentagon
     ]);
     /* eslint-enable no-multi-spaces */
 
