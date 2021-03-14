@@ -15,6 +15,8 @@ const init = () => {
         return;
     }
 
+    updateClearColor(gl, 0.3, 0.4, 0.8, 1.0);
+
     document.body.addEventListener("keydown", (event: KeyboardEvent) => {
         switch (event.code) {
             case "Digit1":
