@@ -19,3 +19,5 @@ Fragment shader defines what happens for each pixel between those points
 VBO Vertex Buffer Objects = arrays of Vertices (vertex = 3 floats)
 IBO Index Buffer Objects = arrays of Indices (indices of vertices to create triangles, usually counter-clockwise)
     e.g. create 9 points, first three indices will define the first triangle.
+
+VertexArrayObjects are like mini contexts for vertex attributes. Instead of binding attributes to the global state, they bind to the VAO, which is then used once when rendering.
