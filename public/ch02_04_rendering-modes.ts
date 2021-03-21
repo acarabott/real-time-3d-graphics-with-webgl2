@@ -89,11 +89,11 @@ const initProgram = async (gl: WebGL2RenderingContext) => {
         throw new Error("could not create gl program");
     }
 
-    const vertexSource = await loadTextFile("./ch02_01_square.vert");
+    const vertexSource = await loadTextFile("./ch02_04_rendering-modes.vert");
     const vertexShader = loadShader(gl, "vertex", vertexSource);
     gl.attachShader(program, vertexShader);
 
-    const fragmentSource = await loadTextFile("./ch02_01_square.frag");
+    const fragmentSource = await loadTextFile("./ch02_04_rendering-modes.frag");
     const fragmentShader = loadShader(gl, "fragment", fragmentSource);
     gl.attachShader(program, fragmentShader);
 
